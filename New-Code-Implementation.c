@@ -363,9 +363,9 @@ int main(){
         process[i].WaitTime=(process[i].Finishtime - process[i].ArrivalTime) - process[i].BurstTime;
     }
 
-    printf("Result : \n");
+    printf("\n\nResult : \n");
     for(int i=0;i<processCount;i++){
-        printf("Process[%d] | Pid:[%d] | ResTime:[%d]| FinishTime:[%d] | WaitTime:[%d]\n",process[i].Number,process[i].Pid,process[i].ResTime,process[i].Finishtime,process[i].WaitTime);
+        printf("Process[%d] | Pid:[%d] | ResponseTime:[%d]| FinishTime:[%d] | WaitTime:[%d]\n",process[i].Number,process[i].Pid,process[i].ResTime,process[i].Finishtime,process[i].WaitTime);
     }
 
     return 0;
